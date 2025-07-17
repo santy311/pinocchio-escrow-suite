@@ -1,0 +1,25 @@
+[package]
+name = "escrow-suite"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pinocchio = { version = "0.8.4", features = ["std"] }
+pinocchio-associated-token-account = "0.1.1"
+pinocchio-pubkey = "0.2.4"
+pinocchio-system = "0.2.3"
+pinocchio-token = "0.3.0"
+
+[dev-dependencies]
+anyhow = "1.0.98"
+litesvm = "0.6.1"
+litesvm-token = "0.6.1"
+solana-sdk = "2.2.1"
+spl-associated-token-account = "7.0.0"
+spl-token = "8.0.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+no-entrypoint = []
